@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="css/preloader.css">
+<div id="preloader">
+  <div id="status">
+  </div>
+  <div class="status2">
+  </div>
+  <h1 class="preloader-text"> Being IITian</h1>
+</div>
+<%- include("partials/header"); -%>
+
+<head>
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Montserrat|Allura|Merriweather|Nanum+Myeongjo|Fondamento|Comic+Neue|Dancing+Script|Raleway|Roboto:100|Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body onload="assignvalues(<%=JSON.stringify(posts)%>)">
+
+  <div class="box">
+    <p class="title">Being IITian</p>
+    <p class="description">Life is always easier when you learn from the experiences of others. As Acharya Chanakya has said, <em>"Learn from the mistakes of others, you can't live long enough to make them all yourselves!".</em><br><br>
+Indeed, we need to explore, but we should know where we can make mistakes. This blog is preferably created for first-year students, who just step into the college world, a new phase of their life. It is the beginning of a new journey, and if the start is good, the destination will be the best. Here, you can learn from the experiences of others and can share yours also. So, what are you waiting for? Go through the posts, enjoy them, laugh and cry and learn from them.</p>
+  </div>
+
+  <div class="posts-images">
+    <h1 class="experience">THE EXPERIENCES</h1>
+    <% if(posts.length==0){%>
+      <h1> <span style="color: #909090;">There is no post yet.</span>  </h1>
+      <span style="font-size: 2.5rem;">😢</span>
+    <%}%>
+    <% for(var i=0;i<posts.length;i++){%>
+    <div class="box-ind">
+      <div class="temp" style="vertical-align: top;"></div>
+      <div class="image_box">
+        <span class="image-number"><%=i+1%></span>
+        <img class="image" src="data:<%=posts[i].image.enctype%>; base64,<%=posts[i].image.data%>" onclick="func_open(<%=i%>)" alt="">
+        <p class="image-title"><%=posts[i].title%></p>
+      </div>
+    </div>
+    <%}%>
+    <div style="clear:both;">
+    </div>
+</div>
+
+  <div class="preview">
+    <div class="preview1">
+
+      <div class="preview1deep">
+        <button type="button" class="close-button" onclick="func_close()" name="button">Close</button>
+        <div class="temp"></div>
+        <img class="preview1-image" id="preview-image" src="1.jpg" alt="">
+      </div>
+    </div>
+    <div class="preview2">
+
+      <div class="preview2deep">
+        <p id="title" class="preview-title">Hey There how are you</p>
+        <p id="subtitle" class="preview-subtitle">Enjoying Right</p>
+        <p class="subpart"><span class="sub-heading">Author: </span>
+          <span id="author" class="sub-content">Aditya Prakash</span></p>
+        <p class="subpart">
+          <span class="sub-heading">Date: </span>
+          <span id="date" class="sub-content">25 september</span>
+        </p>
+        <p id="post" class="main-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in
+        </p>
+        <div class="preview-navigation">
+          <div>
+            <button class="nav-button" type="button" onclick="previous()" name="button">&#x25C0 Previous</button>
+            <span> <span id="current" class="current-page"></span> <span id="total" class="total-page"></span> </span>
+            <button class="nav-button" type="button" onclick="next()" name="button">Next &#x25B6</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/home.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div style="background-color:#68798E;">
+
+<%- include("partials/footer"); -%>

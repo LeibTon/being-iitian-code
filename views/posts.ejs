@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=post.title%></title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Myeongjo|PT+Sans|Raleway|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/post.css">
+  </head>
+  <body>
+    <button type="button" class="close-button" onclick="parent.location='/'" name="button">Home</button>
+      <div class="box-main">
+        <img class="main-image" src="data:<%=post.image.enctype%>; base64,<%=post.image.data%>" alt="">
+        <p class="post-title"><%=post.title%></p>
+        <p class="post-subtitle"><%=post.subtitle%></p>
+        <p class="sub-part"><span class="post-subheading">Author:</span>
+        <span class="post-subcontent"><%=post.author%></span></p>
+        <p class="sub-part">
+        <span class="post-subheading">Date:</span>
+        <span class="post-subcontent"><%=post.date%></span></p>
+        <div class="post-content"> <%-contents%> </div><div class="post-navigation" >
+          <button class="post-button" onclick="parent.location='/posts/<%=previous%>'" type="button" name="button"> Previous</button>
+          <button class="post-button" onclick="parent.location='/posts/<%=next%>'" type="button" name="button">Next 	</button>
+        </div>
+      </div>
+
+  </body>
+</html>

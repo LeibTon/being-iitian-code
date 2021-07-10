@@ -1,0 +1,193 @@
+body {
+   background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  #146c78 0%, #0e91a1 100.2% );
+   text-align: center;
+}
+
+
+.box {
+  text-align: left;
+  background-color: #FDFCFB;
+  margin: 120px auto 50px auto;
+  position: relative;
+  width: 400px;
+  box-shadow:
+       inset 0 -3em 3em #87C8D0,
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.detail__label {
+ font-family: 'Allura', cursive;
+ font-weight:500;
+ font-size:1.7rem;
+ letter-spacing:.05rem;
+ display:inline-block;
+ margin-right:auto;
+ margin-left: 20px;
+ color:#223328
+}
+.input_text {
+ -webkit-appearance:none;
+ -moz-appearance: none;
+ border:none;
+ resize:none;
+ background: transparent;
+ border-bottom:1px solid lightgrey;
+ display:block;
+ width:88%;
+ margin-bottom:0.7rem;
+ margin-right: 20px;
+ margin-left: 20px;
+ -webkit-transition:border 180ms linear;
+ -moz-transition: border 180ms linear;
+ -o-transition:border 180ms linear;
+ transition:border 180ms linear;
+ font-size:1rem;
+ font-family: 'Open Sans Condensed', sans-serif;
+ line-height:0.9;
+ letter-spacing:.05rem;
+ padding:0.4rem .25rem;
+ border-radius:0
+}
+.input_text:focus {
+ border-bottom:1px solid #979797;
+}
+
+
+
+.preview_image
+{
+  display: block;
+ max-width:280px;
+ max-height:250px;
+ position: absolute;
+ left: 270px;
+ top: -20px;
+ z-index: 1;
+ transform: rotateZ(15deg);
+ width: auto;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+ box-shadow: -2px 2px 2px 1px #e7e7de;
+
+}
+
+
+.upload-logo {
+  vertical-align: middle;
+  width: 40px;
+
+}
+
+.links:hover {
+  cursor: url("../images/grab.png") 16 0,pointer;
+}
+
+.links:active {
+  cursor: url("../images/grabbing.png") 10 0,pointer;
+}
+
+.upload-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.upload-input-class {
+  border: none;
+  margin-left: 20px;
+  resize: None;
+  background: transparent;
+  border-bottom: 1px solid lightgrey;
+  transition:border 180ms linear;
+  font-size:1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height:1;
+  letter-spacing:.05rem;
+  padding:0.7rem .25rem;
+  border-radius:0;
+}
+
+.publish {
+  padding: 10px 30px;
+  border-radius: 50%;
+  margin:auto;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #fff 0%, #87C8D0 100%);
+  display: block;
+}
+
+.publish:hover {
+  background-image: linear-gradient(to left, #fff 0%,  #87C8D0 100%);
+}
+.one {
+  font-size: 20px;
+  font-family: 'Special Elite', cursive;
+}
+
+
+
+.box-extra {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+  text-align: center;
+  z-index: 12;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.visible1 {
+  visibility: visible;
+}
+
+.extra1 {
+margin-left: 20px;
+height: 87vh;
+width: 95%;
+}
+.btn-grad {
+  padding: 10px 50px;
+  margin: auto auto 50px auto;
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%)}
+.btn-grad:hover { background-position: right center; }
+
+
+/* Uploading Part */
+.polling_message {
+  margin: 3px 10px 0px 10px;
+  color: white;
+  float: left;
+}
+
+.sliding-bar {
+  visibility: collapse;
+  border: solid 1px lightgrey;
+  background-color: #146c78;
+  height: 25px;
+  width: 8rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  background-color: lightcyan;
+  background-image: linear-gradient(to right,
+      rgba(20,108,120, .9) 25%,
+      rgba(20,108,120, .1) 50%,
+      rgba(20,108,120, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 2s linear 0s infinite alternate move_eye;
+          animation: 2s linear 0s infinite alternate move_eye;
+  -moz-animation: 2s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }

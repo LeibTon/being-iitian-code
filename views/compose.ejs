@@ -1,0 +1,47 @@
+<%- include("partials/header"); -%>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Allura|Special+Elite|Jim+Nightshade|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/compose_styles.css">
+</head>
+
+<body>
+  <div class="box">
+    <img class="preview_image" src="images/post.jpg" />
+    <form  action="" method="post" enctype="multipart/form-data">
+      <label for="postAuthor" class="detail__label" style="margin-top: 20px;">Author</label>
+      <input type="text" class="input_text" name="postAuthor" value="" required>
+      <label for="postTitle" class="detail__label">Title</label>
+      <input type="text" name="postTitle" class="input_text" value=""required>
+      <label for="postSubTitle" class="detail__label">SubTitle</label>
+      <input type="text" class="input_text"  name="postSubTitle" value=""required>
+      <label for="description" class="detail__label">Post</label>
+      <textarea name="description" class="input_text" id="post" rows="1" required></textarea>
+      <label for="" class="detail__label">Image</label> <br>
+      <div style="margin-top:0.5rem;">
+        <label for="input-files"> <img class="upload-logo links" src="images/upload.png" alt=""> </label>
+        <input type="text" name="" id="upload-input" class="upload-input-class" value="" placeholder="Choose Your File..." required />
+        <input id="input-files" style="visibility:hidden;" type="file" name="myImage" accept="image/*" required/>
+      </div>
+      <button type="submit" class="publish links" name="button" onclick="working()"><span class="one">Publish</span></button>
+    </form>
+    </div>
+    <div class="sliding-bar">
+    <div class="polling_message">
+      UPLOADING
+    </div>
+    <div class="slider"></div>
+  </div>
+  <div class="box-extra">
+  <textarea name="" class="input_text extra1" id="extra-text"></textarea>
+  <button type="button" id="btn" class="btn-grad" name="button"><span style="font-size: 19px; font-family: 'Special Elite', cursive;">Done</span></button>
+<br><br>
+  </div>
+<div style="position: fixed; bottom: 30px; right: 30px;"><a href = "https://github.com/showdownjs/showdown" style="text-decoration: none; color: orange; font-size:1.1rem; font-weight: bolder;">MarkDown Format (Similar To Github Markdown)</a></div>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/compose_script.js" charset="utf-8"></script>
+  <div>
+
+  <%- include("partials/footer"); -%>

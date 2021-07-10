@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.box-main {
+  padding: 50px 20px 50px 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.main-image {
+  max-height: 90vh;
+  max-width: 80vh;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.post-title {
+  margin-top: 1rem;
+  color: #537780;
+font-size: 3.4rem;
+margin-bottom: 0.3rem;
+font-family: 'Dancing Script', cursive;
+}
+
+.post-subtitle {
+  margin-top: 0.3rem;
+  font-size: 1.7rem;
+color: #888888;
+opacity: 0.7;
+font-family: 'Roboto', sans-serif;
+}
+
+.sub-part {
+  margin: 0.3rem 10rem 0.3rem;
+  text-align: left;
+}
+
+.post-subheading
+{
+  font-weight: bolder;
+ font-size: 1.3rem;
+font-family: 'Nanum Myeongjo', serif;
+color: #34495e;
+
+}
+
+.post-subcontent{
+
+color: #5da0a2;
+font-size: 1.15rem;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.post-content{
+  margin: 20px auto;
+text-align: left;
+font-family: 'Raleway', sans-serif;
+color: #606060;
+max-width: 84%;
+line-height: 1.5rem;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.post-navigation {
+  width: 100%;
+  margin: 2.5rem auto 2rem auto;
+  text-align: center;
+}
+
+.post-button {
+  border-radius: 50%;
+  padding: 10px 25px 10px 25px;
+  border-color: #808080;
+  margin: 0 220px;
+  background: transparent;
+  font-size: 1.2rem;
+  color: #808080;
+  border: solid 2px;
+}
+
+.post-button:hover {
+  color: #606060;
+  border-color: #606060;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+  padding: 10px 20px 10px 20px;
+  background: transparent;
+  border: solid;
+  border-color: darkgrey;
+  border-width: 1px;
+  color: darkgrey;
+}
+
+.close-button:hover {
+  border-color: black;
+  color: black;
+  cursor: pointer;
+  transition-duration: 1s;
+}

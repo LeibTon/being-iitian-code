@@ -1,0 +1,29 @@
+{
+  "name": "being-iitian",
+  "version": "1.0.0",
+  "description": "This is a blog website designed using Node JS.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Aditya Prakash",
+  "license": "ISC",
+  "engines": {
+    "node": "12.16.2",
+    "npm": "6.14.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.9.13",
+    "multer": "^1.4.2",
+    "nl2br": "0.0.3",
+    "path": "^0.12.7",
+    "showdown": "^1.9.1"
+  }
+}
