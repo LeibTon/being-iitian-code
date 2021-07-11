@@ -6,3 +6,5 @@ A blog website designed using NodeJS using EJS template for rendering html files
 - Converts image to base64 and store them on mongoDB.
 
 [Visit Here](https://beingiitian.herokuapp.com/)
+
+#### Thanks.
